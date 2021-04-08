@@ -15,15 +15,7 @@ public class Navigtion {
 	     WebDriver driver=new ChromeDriver();
 	     driver.get("https://www.youtube.com/watch?v=-GAsbyGE_5o");
 	     System.out.println(driver.getTitle());
-	     driver.navigate().back();
-	     driver.navigate().to("https://www.facebook.com/");
-	     driver.navigate().refresh();
-	     TakesScreenshot x=(TakesScreenshot)driver;
-	     File screenshotAs = x.getScreenshotAs(OutputType.FILE);
-	     
-	     System.out.println(screenshotAs);
-	     File desFile=new File(".//screenshot/screen.png");
-	     FileUtils.copyFile(screenshotAs, desFile);
+	    
 	     
 	     
 	
